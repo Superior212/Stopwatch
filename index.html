@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<section>
+    <div class="py-12 bg-gray-600 z-10 absolute top-0 right-0 bottom-0 left-0">
+        <div class="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+            <div class="relative py-8 px-5 md:px-10 bg-white bg-gray-900 border-gray-700 shadow-md rounded border border-gray-400">
+                <div class="flex justify-center items-center space-x-9 pl-4">
+                      <label for="" class="text-white  text-sm font-bold md:pl-14 md:pr-8" >DAYS</label> 
+                     <label for="" class="text-white  text-sm font-bold md:pr-6">HOURS</label> 
+                        <label for="" class="text-white  text-sm font-bold md:pr-6">MINUTES</label>
+                         <label for="" class="text-white  text-sm font-bold md:pr-10">SECONDS</label>
+                </div>
+             <div class="flex justify-center items-center space-x-2"> 
+                <input disabled id="dd" class="mb-5 mt-2 bg-gray-900 text-orange-300 placeholder-indigo-300 font-bold text-center w-20 h-fit flex items-center  pl-3 md:text-6xl" placeholder="00">
+                <span class="text-indigo-300 md:text-5xl  pb-4">:</span>
+              
+                <input disabled id="hh" class="mb-5 mt-2 bg-gray-900 text-orange-300 placeholder-indigo-300 font-bold text-center w-20 h-fit flex items-center pl-3 md:text-6xl" placeholder="00">
+                <span class="text-indigo-300 md:text-5xl  pb-4">:</span>
+               
+                <input disabled id="mm" class="mb-5 mt-2 bg-gray-900 text-orange-300 placeholder-indigo-300 font-bold text-center w-20 h-fit flex items-center pl-3 md:text-6xl" placeholder="00"> 
+                <span class="text-indigo-300 md:text-5xl  pb-4">:</span>               
+              
+                <input disabled id="ss" class="mb-5 mt-2 bg-gray-900 text-orange-300 placeholder-indigo-300 font-bold text-center w-20 h-fit flex items-center pl-3 md:text-6xl" placeholder="00">
+             </div>
+             <div class="flex items-center justify-center w-full">
+                 <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm" onclick="start()">Start</button>
+                 <button class="focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-indigo-700 ml-3 bg-indigo-700 transition duration-150 text-gray-100 ease-in-out hover:border-gray-400 hover:bg-gray-300  rounded px-8 py-2 text-sm" onclick=" pauseTime()">Pause</button>
+                 <button class="focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-indigo-700 ml-3 bg-indigo-700 transition duration-150 text-gray-100 ease-in-out hover:border-gray-400 hover:bg-gray-300  rounded px-8 py-2 text-sm" onclick="stopTime()">Stop</button>
+             </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
