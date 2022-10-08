@@ -7,7 +7,7 @@ const start = () => {
     myseconds++;
     ss.value = myseconds;
    
-   setTime = setTimeout(start, 100);
+   setTime = setTimeout(start, 1000);
     
     if (ss.value ==59) { 
       ss.value = 00;
