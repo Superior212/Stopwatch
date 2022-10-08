@@ -3,13 +3,16 @@ const start = () => {
   let hourNotice  = new Audio ("audio/alarm-clock-beep.wav");
   let minuteNotic = new Audio("audio/clock-alarm-beep.wav");
 
-    let myseconds = ss.value;
-    myseconds++;
-    ss.value = myseconds;
+    let myMileSeconds = ms.value;
+    myMileSeconds++;
+    ms.value = myMileSeconds;
    
-   setTime = setTimeout(start, 1000);
-    
-    if (ss.value ==59) { 
+   setTime = setTimeout(start, "9");
+
+   if (ms.value==100) {
+    ms.value = 0;
+    ss.value++;
+   }else if (ss.value ==59) { 
       ss.value = 00;
       mm.value++;
       minuteNotic.play();
